@@ -1,20 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
-const fondoBienvenida = () => {
+const FondoBienvenida = () => {
   return(
     <ImageBackground
       source={require('./assets/fondo.jpg')} style={styles.fondo}>
       <View style={styles.contenido}>
-        <Text style={styles.contenido}> Bienvenido a mi app</Text>
+        <Text style={styles.titulo}>Bienvenido a mi app</Text>
       </View>
     </ImageBackground>
   )
 };
+
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <fondoBienvenida />
+      <FondoBienvenida />
+      <StatusBar style="auto" />
     </SafeAreaView>
   );
 }
