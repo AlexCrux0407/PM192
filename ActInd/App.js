@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button, ActivityIndicator, StatusBar } from 'react-native';
 const IndicadorCarga = ({color, size}) => {
-  return <ActivityIndicator color={color} size={size} style={styles.indicador} />
+  return <ActivityIndicator color={color} size={size} style={styles.indicador} />;
 }
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
 
       <Button title="Iniciar Carga" onPress={iniciarCarga} />
       {cargando ? (
-         <IndicadorCarga color="#deepskyblue" 
+         <IndicadorCarga color="#0066cc" 
          size="large" />
       ) : (
         <Text style={styles.textoSecundario}> Presiona el botón para comenzar</Text>
@@ -49,6 +49,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginVertical: 20,
     color: '#3a3a3a',
+  },
+  indicador: {
+    marginTop: 20,
+    transform: [{ scale: 1.5 }], // Hace el indicador más visible
   },
 
 

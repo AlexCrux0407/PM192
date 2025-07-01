@@ -41,7 +41,7 @@ export default function App() {
     { id: '6', nombre: 'Sofia', mensaje: 'Preparar presentación' },
   ]);
 
-  // Función para renderizar cada item individual (usad
+  // Función para renderizar cada item individual
   const renderItem = ({ item }) => (
     <View style={styles.itemCard}>
       <Text style={styles.itemNombre}>{item.nombre}</Text>
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     marginTop: 15, 
     color: '#222',
   },
-  // Estilo de cada tarjeta/item individual
+  // Estilo de cada tarjeta
   itemCard: {
     backgroundColor: '#fff',
     borderRadius: 8,
